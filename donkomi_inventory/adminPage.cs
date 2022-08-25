@@ -10,19 +10,19 @@ using System.Windows.Forms;
 
 namespace donkomi_inventory
 {
-    public partial class Form1 : Form
+    public partial class adminPage : Form
     {
-        public Form1()
+        public adminPage()
         {
             InitializeComponent();
         }
 
-        private void usernameLabel_Click(object sender, EventArgs e)
+        private void panel4_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void forgotPassword_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }

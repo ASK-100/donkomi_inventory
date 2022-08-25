@@ -1,6 +1,6 @@
 ﻿namespace donkomi_inventory
 {
-    partial class Form1
+    partial class loginPage
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.splitter1 = new System.Windows.Forms.Splitter();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.usernameInput = new System.Windows.Forms.TextBox();
             this.passwordInput = new System.Windows.Forms.TextBox();
             this.passwordLabel = new System.Windows.Forms.Label();
@@ -39,6 +38,9 @@
             this.loginButton = new System.Windows.Forms.Button();
             this.roleMenu = new System.Windows.Forms.ComboBox();
             this.roleLabel = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // splitter1
@@ -46,24 +48,14 @@
             this.splitter1.Dock = System.Windows.Forms.DockStyle.Right;
             this.splitter1.Location = new System.Drawing.Point(681, 0);
             this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(399, 699);
+            this.splitter1.Size = new System.Drawing.Size(399, 743);
             this.splitter1.TabIndex = 0;
             this.splitter1.TabStop = false;
-            // 
-            // panel1
-            // 
-            this.panel1.BackgroundImage = global::donkomi_inventory.Properties.Resources.splash3;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(510, 699);
-            this.panel1.TabIndex = 1;
             // 
             // usernameInput
             // 
             this.usernameInput.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usernameInput.Location = new System.Drawing.Point(717, 332);
+            this.usernameInput.Location = new System.Drawing.Point(717, 353);
             this.usernameInput.Name = "usernameInput";
             this.usernameInput.Size = new System.Drawing.Size(305, 36);
             this.usernameInput.TabIndex = 2;
@@ -71,7 +63,7 @@
             // passwordInput
             // 
             this.passwordInput.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passwordInput.Location = new System.Drawing.Point(717, 414);
+            this.passwordInput.Location = new System.Drawing.Point(717, 440);
             this.passwordInput.Name = "passwordInput";
             this.passwordInput.Size = new System.Drawing.Size(305, 36);
             this.passwordInput.TabIndex = 3;
@@ -81,7 +73,7 @@
             // 
             this.passwordLabel.AutoSize = true;
             this.passwordLabel.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passwordLabel.Location = new System.Drawing.Point(714, 392);
+            this.passwordLabel.Location = new System.Drawing.Point(714, 416);
             this.passwordLabel.Name = "passwordLabel";
             this.passwordLabel.Size = new System.Drawing.Size(79, 20);
             this.passwordLabel.TabIndex = 4;
@@ -91,7 +83,7 @@
             // 
             this.usernameLabel.AutoSize = true;
             this.usernameLabel.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usernameLabel.Location = new System.Drawing.Point(714, 310);
+            this.usernameLabel.Location = new System.Drawing.Point(714, 329);
             this.usernameLabel.Name = "usernameLabel";
             this.usernameLabel.Size = new System.Drawing.Size(83, 20);
             this.usernameLabel.TabIndex = 5;
@@ -102,7 +94,7 @@
             // 
             this.forgotPassword.AutoSize = true;
             this.forgotPassword.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.forgotPassword.Location = new System.Drawing.Point(791, 526);
+            this.forgotPassword.Location = new System.Drawing.Point(791, 559);
             this.forgotPassword.Name = "forgotPassword";
             this.forgotPassword.Size = new System.Drawing.Size(183, 23);
             this.forgotPassword.TabIndex = 6;
@@ -114,7 +106,7 @@
             // 
             this.showPassword.AutoSize = true;
             this.showPassword.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.showPassword.Location = new System.Drawing.Point(717, 479);
+            this.showPassword.Location = new System.Drawing.Point(717, 509);
             this.showPassword.Name = "showPassword";
             this.showPassword.Size = new System.Drawing.Size(145, 24);
             this.showPassword.TabIndex = 7;
@@ -124,9 +116,9 @@
             // loginButton
             // 
             this.loginButton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginButton.Location = new System.Drawing.Point(925, 584);
+            this.loginButton.Location = new System.Drawing.Point(925, 620);
             this.loginButton.Name = "loginButton";
-            this.loginButton.Size = new System.Drawing.Size(97, 33);
+            this.loginButton.Size = new System.Drawing.Size(97, 35);
             this.loginButton.TabIndex = 8;
             this.loginButton.Text = "Login";
             this.loginButton.UseVisualStyleBackColor = true;
@@ -138,7 +130,7 @@
             this.roleMenu.Items.AddRange(new object[] {
             "Administrator",
             "Attendant"});
-            this.roleMenu.Location = new System.Drawing.Point(717, 250);
+            this.roleMenu.Location = new System.Drawing.Point(717, 266);
             this.roleMenu.Name = "roleMenu";
             this.roleMenu.Size = new System.Drawing.Size(305, 35);
             this.roleMenu.TabIndex = 9;
@@ -147,17 +139,38 @@
             // 
             this.roleLabel.AutoSize = true;
             this.roleLabel.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roleLabel.Location = new System.Drawing.Point(714, 227);
+            this.roleLabel.Location = new System.Drawing.Point(714, 241);
             this.roleLabel.Name = "roleLabel";
             this.roleLabel.Size = new System.Drawing.Size(41, 20);
             this.roleLabel.TabIndex = 10;
             this.roleLabel.Text = "Role";
             // 
-            // Form1
+            // pictureBox1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.pictureBox1.BackgroundImage = global::donkomi_inventory.Properties.Resources.icons8_male_user_64;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(820, 85);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(96, 121);
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
+            // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = global::donkomi_inventory.Properties.Resources.splash3;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(510, 743);
+            this.panel1.TabIndex = 1;
+            // 
+            // loginPage
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1080, 699);
+            this.ClientSize = new System.Drawing.Size(1080, 743);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.roleLabel);
             this.Controls.Add(this.roleMenu);
             this.Controls.Add(this.loginButton);
@@ -169,8 +182,10 @@
             this.Controls.Add(this.usernameInput);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.splitter1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Name = "loginPage";
+            this.Text = "Login Page";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -189,6 +204,7 @@
         private System.Windows.Forms.Button loginButton;
         private System.Windows.Forms.ComboBox roleMenu;
         private System.Windows.Forms.Label roleLabel;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

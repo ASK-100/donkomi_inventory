@@ -45,17 +45,19 @@
             // 
             // splitter1
             // 
+            this.splitter1.BackColor = System.Drawing.Color.Gold;
+            this.splitter1.Cursor = System.Windows.Forms.Cursors.Default;
             this.splitter1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.splitter1.Location = new System.Drawing.Point(681, 0);
+            this.splitter1.Location = new System.Drawing.Point(645, 0);
             this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(399, 743);
+            this.splitter1.Size = new System.Drawing.Size(435, 704);
             this.splitter1.TabIndex = 0;
             this.splitter1.TabStop = false;
             // 
             // usernameInput
             // 
             this.usernameInput.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usernameInput.Location = new System.Drawing.Point(717, 353);
+            this.usernameInput.Location = new System.Drawing.Point(717, 313);
             this.usernameInput.Name = "usernameInput";
             this.usernameInput.Size = new System.Drawing.Size(305, 36);
             this.usernameInput.TabIndex = 2;
@@ -63,7 +65,7 @@
             // passwordInput
             // 
             this.passwordInput.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passwordInput.Location = new System.Drawing.Point(717, 440);
+            this.passwordInput.Location = new System.Drawing.Point(717, 400);
             this.passwordInput.Name = "passwordInput";
             this.passwordInput.Size = new System.Drawing.Size(305, 36);
             this.passwordInput.TabIndex = 3;
@@ -72,8 +74,10 @@
             // passwordLabel
             // 
             this.passwordLabel.AutoSize = true;
+            this.passwordLabel.BackColor = System.Drawing.Color.Gold;
             this.passwordLabel.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passwordLabel.Location = new System.Drawing.Point(714, 416);
+            this.passwordLabel.ForeColor = System.Drawing.Color.Black;
+            this.passwordLabel.Location = new System.Drawing.Point(714, 376);
             this.passwordLabel.Name = "passwordLabel";
             this.passwordLabel.Size = new System.Drawing.Size(79, 20);
             this.passwordLabel.TabIndex = 4;
@@ -82,8 +86,10 @@
             // usernameLabel
             // 
             this.usernameLabel.AutoSize = true;
+            this.usernameLabel.BackColor = System.Drawing.Color.Gold;
             this.usernameLabel.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usernameLabel.Location = new System.Drawing.Point(714, 329);
+            this.usernameLabel.ForeColor = System.Drawing.Color.Black;
+            this.usernameLabel.Location = new System.Drawing.Point(714, 289);
             this.usernameLabel.Name = "usernameLabel";
             this.usernameLabel.Size = new System.Drawing.Size(83, 20);
             this.usernameLabel.TabIndex = 5;
@@ -93,8 +99,12 @@
             // forgotPassword
             // 
             this.forgotPassword.AutoSize = true;
+            this.forgotPassword.BackColor = System.Drawing.Color.Gold;
             this.forgotPassword.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.forgotPassword.Location = new System.Drawing.Point(791, 559);
+            this.forgotPassword.ForeColor = System.Drawing.Color.Black;
+            this.forgotPassword.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.forgotPassword.LinkColor = System.Drawing.Color.Black;
+            this.forgotPassword.Location = new System.Drawing.Point(791, 519);
             this.forgotPassword.Name = "forgotPassword";
             this.forgotPassword.Size = new System.Drawing.Size(183, 23);
             this.forgotPassword.TabIndex = 6;
@@ -105,23 +115,29 @@
             // showPassword
             // 
             this.showPassword.AutoSize = true;
+            this.showPassword.BackColor = System.Drawing.Color.Gold;
             this.showPassword.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.showPassword.Location = new System.Drawing.Point(717, 509);
+            this.showPassword.ForeColor = System.Drawing.Color.Black;
+            this.showPassword.Location = new System.Drawing.Point(717, 469);
             this.showPassword.Name = "showPassword";
             this.showPassword.Size = new System.Drawing.Size(145, 24);
             this.showPassword.TabIndex = 7;
             this.showPassword.Text = "Show Password";
-            this.showPassword.UseVisualStyleBackColor = true;
+            this.showPassword.UseVisualStyleBackColor = false;
             // 
             // loginButton
             // 
-            this.loginButton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginButton.Location = new System.Drawing.Point(925, 620);
+            this.loginButton.BackColor = System.Drawing.Color.LightCyan;
+            this.loginButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.loginButton.FlatAppearance.BorderSize = 2;
+            this.loginButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.loginButton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginButton.Location = new System.Drawing.Point(925, 580);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(97, 35);
             this.loginButton.TabIndex = 8;
             this.loginButton.Text = "Login";
-            this.loginButton.UseVisualStyleBackColor = true;
+            this.loginButton.UseVisualStyleBackColor = false;
             // 
             // roleMenu
             // 
@@ -130,7 +146,7 @@
             this.roleMenu.Items.AddRange(new object[] {
             "Administrator",
             "Attendant"});
-            this.roleMenu.Location = new System.Drawing.Point(717, 266);
+            this.roleMenu.Location = new System.Drawing.Point(717, 226);
             this.roleMenu.Name = "roleMenu";
             this.roleMenu.Size = new System.Drawing.Size(305, 35);
             this.roleMenu.TabIndex = 9;
@@ -138,8 +154,10 @@
             // roleLabel
             // 
             this.roleLabel.AutoSize = true;
+            this.roleLabel.BackColor = System.Drawing.Color.Gold;
             this.roleLabel.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roleLabel.Location = new System.Drawing.Point(714, 241);
+            this.roleLabel.ForeColor = System.Drawing.Color.Black;
+            this.roleLabel.Location = new System.Drawing.Point(714, 201);
             this.roleLabel.Name = "roleLabel";
             this.roleLabel.Size = new System.Drawing.Size(41, 20);
             this.roleLabel.TabIndex = 10;
@@ -147,9 +165,10 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Gold;
             this.pictureBox1.BackgroundImage = global::donkomi_inventory.Properties.Resources.icons8_male_user_64;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(820, 85);
+            this.pictureBox1.Location = new System.Drawing.Point(820, 45);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(96, 121);
             this.pictureBox1.TabIndex = 11;
@@ -162,14 +181,15 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(510, 743);
+            this.panel1.Size = new System.Drawing.Size(510, 704);
             this.panel1.TabIndex = 1;
             // 
             // loginPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1080, 743);
+            this.BackColor = System.Drawing.Color.LightCyan;
+            this.ClientSize = new System.Drawing.Size(1080, 704);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.roleLabel);
             this.Controls.Add(this.roleMenu);

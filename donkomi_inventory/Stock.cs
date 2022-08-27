@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace donkomi_inventory
 {
-    public partial class products : Form
+    public partial class Stock : Form
     {
-        public products()
+        public Stock()
         {
             InitializeComponent();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -36,5 +36,29 @@ namespace donkomi_inventory
         {
 
         }
+
+        private void home_Click(object sender, EventArgs e)
+        {
+            this.Show();
+        }
+
+        private void attendants_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            attendants attendants = new attendants();
+            attendants.Show();
+        }
+
+        private void products_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            products products = new products();
+            products.Show();
+        }
+
+        private void category_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

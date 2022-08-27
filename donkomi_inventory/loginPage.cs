@@ -26,5 +26,17 @@ namespace donkomi_inventory
         {
 
         }
+
+        private void loginButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            adminPage adminPage = new adminPage();
+            adminPage.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }

@@ -101,11 +101,11 @@
     <Compile Include="attendants.Designer.cs">
       <DependentUpon>attendants.cs</DependentUpon>
     </Compile>
-    <Compile Include="manageAttendants.cs">
+    <Compile Include="AttendantManagement.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="manageAttendants.Designer.cs">
-      <DependentUpon>manageAttendants.cs</DependentUpon>
+    <Compile Include="AttendantManagement.Designer.cs">
+      <DependentUpon>AttendantManagement.cs</DependentUpon>
     </Compile>
     <Compile Include="loginPage.cs">
       <SubType>Form</SubType>
@@ -113,19 +113,19 @@
     <Compile Include="loginPage.Designer.cs">
       <DependentUpon>loginPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="products.cs">
+    <Compile Include="generalManagement.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="products.Designer.cs">
-      <DependentUpon>products.cs</DependentUpon>
+    <Compile Include="generalManagement.Designer.cs">
+      <DependentUpon>generalManagement.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="register.cs">
+    <Compile Include="Stock.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="register.Designer.cs">
-      <DependentUpon>register.cs</DependentUpon>
+    <Compile Include="Stock.Designer.cs">
+      <DependentUpon>Stock.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="adminPage.resx">
       <DependentUpon>adminPage.cs</DependentUpon>
@@ -133,14 +133,14 @@
     <EmbeddedResource Include="attendants.resx">
       <DependentUpon>attendants.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="manageAttendants.resx">
-      <DependentUpon>manageAttendants.cs</DependentUpon>
+    <EmbeddedResource Include="AttendantManagement.resx">
+      <DependentUpon>AttendantManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="loginPage.resx">
       <DependentUpon>loginPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="products.resx">
-      <DependentUpon>products.cs</DependentUpon>
+    <EmbeddedResource Include="generalManagement.resx">
+      <DependentUpon>generalManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -152,8 +152,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="register.resx">
-      <DependentUpon>register.cs</DependentUpon>
+    <EmbeddedResource Include="Stock.resx">
+      <DependentUpon>Stock.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -234,6 +234,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-add-new-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-close-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-confirm-67.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-confirm-671.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
